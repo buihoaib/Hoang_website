@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hoang Photography</title>
+</head>
+
+<body>
+    <header class="site-container">
+        <div class="logo">
+            <a href="index.html" class="LogoText">Hoang Photography</a>
+        </div>
+    </header>
+    <div class="menu">
+        <img src="/img/hambuger.png" onclick="menuClicked()" class="ham-menu" alt="hambuger-icon">
+        <div id="nav-bar">
+            <a href="#top" class="item-link">Home</a>
+            <a href="#about-section" class="item-link">About</a>
+            <a href="#gallery-section" class="item-link">Gallery</a>
+            <a href="#beforeAfter-section" class="item-link">Before & After</a>
+            <a href="#contact-section" class="item-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Highlighted photos slideshow -->
+    <div class="slideshow">
+        <h2>Featured photos</h1>
+            <!-- Next and previous buttons for slideshow -->
+            <a class="previous" onclick="nextSlide(-1)">&#10094;</a>
+            <a class="next" onclick="nextSlide(1)">&#10095;</a>
+
+            <ul class="img-slider">
+                <li class="slider-item">
+                    <img class="img-item" src="/img/1.jpg" alt="pic 1">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" src="/img/2.jpg" alt="pic 2">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" src="/img/3.jpg" alt="pic 3">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" src="/img/4.jpg" alt="pic 4">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" src="/img/5.jpg" alt="pic 5">
+                </li>
+                <li class="slider-item">
+                    <img class="img-item" src="/img/6.jpg" alt="pic 6">
+                </li>
+            </ul>
+    </div>
+
+    <!-- About me section -->
+    <section id="about-section">
+        <img src="/img/profile-cropped.jpg" class="profile-pic" alt="profile pic">
+        <h3>Hello, I'm Hoang</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui dicta aspernatur unde repudiandae dolores magnam tempore in ipsum id consectetur expedita molestiae quaerat ullam explicabo, alias, voluptas quis culpa ab?</p>
+    </section>
+
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+
+</html>
