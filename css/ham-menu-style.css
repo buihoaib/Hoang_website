@@ -16,10 +16,6 @@ li {
     list-style-type: none;
 }
 
-body {
-    background: white;
-}
-
 .logo {
     text-align: center;
 }
@@ -33,6 +29,10 @@ body {
     text-decoration: none;
     padding: 20px;
     margin: 20px 40px;
+}
+
+body {
+    background: white;
 }
 
 .menu {
@@ -51,21 +51,6 @@ h3 {
     margin: 1rem 2rem;
 }
 
-
-/* Mobile style */
-
-li img {
-    max-width: 90%;
-    align-items: center;
-    margin: 10px 5%;
-}
-
-.profile-pic {
-    max-width: 60%;
-    align-items: center;
-    margin: 10px 20%;
-}
-
 .ham-menu {
     align-self: center;
     width: 10%;
@@ -82,33 +67,10 @@ li img {
     text-align: center;
     text-decoration: none;
     color: inherit;
-    opacity: 80%;
     padding: 3px 2px;
     border-bottom: 1px solid rgba(207, 42, 42, 0.2);
 }
 
 .item-link:hover {
     background-color: #f0be81;
-}
-
-.previous,
-.next {
-    cursor: pointer;
-    position: absolute;
-    width: auto;
-    font-size: 40px;
-    color: black;
-    margin: 50px 0px 10px 10px;
-    top: 45%;
-    padding: 20px;
-}
-
-.next {
-    right: 0;
-}
-
-.previous:hover,
-.next:hover {
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.8);
 }

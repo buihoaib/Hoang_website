@@ -1,3 +1,4 @@
+/* Hambuger menu */
 function menuClicked() {
     var items = document.getElementById("nav-bar");
     if (items.style.display === "none") {
@@ -7,18 +8,23 @@ function menuClicked() {
     }
 }
 
-/* var currentSlideIndex = 0;
-showSlide(currentSlideIndex);
+/* Slideshow */
+var slideIndex = 0;
+autoShowSlide();
 
-function nextSlide(i) {
-    currentSlideIndex += i;
-    if (currentSlideIndex <= -1) {
-        currentSlideIndex = 5;
+function autoShowSlide() {
+    var slides = document.getElementsByClassName("slider-item");
+    var len = slides.length;
+    for (var i = 0; i < len; i++) {
+        slides[i].style.display = "none";
     }
-    showSlide(i);
-}
 
-function showSlide(i) {
-    var slides = document.getElementsByClassName("img-item");
-    slides[i].style.display = "block";
-}*/
+    slideIndex++;
+
+    if (slideIndex >= len) {
+        slideIndex = 0;
+    }
+
+    slides[slideIndex].style.display = "block";
+    setTimeout(autoShowSlide, 2000);
+}
