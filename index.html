@@ -4,54 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/ham-menu-style.css">
-    <link rel="stylesheet" href="css/home-style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hoang Photography</title>
 </head>
 
 <body>
-    <header class="site-container">
+    <header class="container-fluid">
         <div class="logo">
-            <a href="index.html" class="LogoText">Hoang Photography</a>
+            <span>Hoang Ha</span> Photography
         </div>
+        <div id="hambuger-menu" href="">
+            <i class="fa fa-bars"></i>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Gallery</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="https://www.facebook.com/beo.bin.7777"><i class="fa fa-facebook"></i></a>
+        </nav>
     </header>
-    <div class="menu">
-        <img src="/img/hambuger.png" onclick="menuClicked()" class="ham-menu" alt="hambuger-icon">
-        <div id="nav-bar">
-            <a href="#top" class="item-link">Home</a>
-            <a href="about.html" class="item-link">About</a>
-            <a href="#gallery-section" class="item-link">Gallery</a>
-            <a href="#beforeAfter-section" class="item-link">Before & After</a>
-            <a href="#contact-section" class="item-link">Contact</a>
+
+    <div class="landing-welcome">
+        <img src="img/IMG_9159.jpg" alt="">
+    </div>
+
+    <div class="about section">
+        <div class="circle-crop-img">
+            <img src="img/profile-cropped.jpg" alt="">
+        </div>
+        <div class="line-separator"></div>
+        <div class="description">
+            <h2>Hello, my name is Hoang</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit eveniet ab ipsum alias consequuntur quia rem veritatis non temporibus laboriosam nobis sequi necessitatibus deleniti incidunt nisi voluptates, libero sint iure.</p>
         </div>
     </div>
 
-    <!-- Highlighted photos slideshow -->
-    <div class="slideshow">
-        <h3>Featured photos</h3>
-        <ul class="img-slider">
-            <li class="slider-item fade">
-                <img src="/img/1.jpg " alt="pic 1 ">
-            </li>
-            <li class="slider-item fade">
-                <img src="/img/2.jpg " alt="pic 2 ">
-            </li>
-            <li class="slider-item fade">
-                <img src="/img/3.jpg " alt="pic 3 ">
-            </li>
-            <li class="slider-item fade">
-                <img src="/img/4.jpg " alt="pic 4 ">
-            </li>
-            <li class="slider-item fade">
-                <img src="/img/5.jpg " alt="pic 5 ">
-            </li>
-            <li class="slider-item fade">
-                <img src="/img/6.jpg " alt="pic 6 ">
-            </li>
-        </ul>
-    </div>
-
-    <script type="text/javascript " src="/js/main.js "></script>
+    <script type="text/javascript " src="js/main.js "></script>
 </body>
 
 </html>
