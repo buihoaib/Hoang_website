@@ -5,19 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Hoang Photography</title>
 </head>
 
 <body>
+    <div id="mobile-overlay-nav">
+        <div class="logo">
+            <span>Hoang Ha</span> Photography
+        </div>
+        <a href="javascript:void(0)" id="close-menu">
+            <i class="fa fa-times-circle"></i>
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="https://www.facebook.com/beo.bin.7777"><i class="fa fa-facebook"></i></a>
+    </div>
     <header class="container-fluid">
         <div class="logo">
             <span>Hoang Ha</span> Photography
         </div>
-        <div id="hambuger-menu" href="">
+        <a href="javascript:void(0)" id="hambuger-menu">
             <i class="fa fa-bars"></i>
-        </div>
+        </a>
         <nav>
             <a href="#">Home</a>
             <a href="#">About</a>
@@ -30,14 +45,29 @@
 
     <div class="landing-welcome">
         <div class="button-container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
             <a class="button" href="#">
                 View My Work
             </a>
+            <div class="slider-buttons">
+                <a id="slide-previous" href="#">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a id="slide-next" href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
         </div>
-        <img src="img/IMG_0492.jpg" alt="">
+        <div class="slideshow">
+            <img class="slide-image fade" src="img/IMG_0492.jpg" alt="">
+            <img class="slide-image fade" src="img/wedding.jpg" alt="">
+            <img class="slide-image fade" src="img/2.jpg" alt="">
+        </div>
     </div>
 
     <div class="about section">
+        <h1>About Me</h1>
         <div class="circle-crop-img">
             <img src="img/profile-cropped.jpg" alt="">
         </div>
@@ -48,12 +78,16 @@
         </div>
     </div>
 
-    <div class="work">
-        <h1>Highlighted work</h1>
+    <div class="work section">
+        <h1>Gallery</h1>
+    </div>
+
+    <div class="services section">
+        <h1>Services</h1>
     </div>
 
     <div class="contact section">
-        <h1>Contact me</h1>
+        <h1>Contact</h1>
         <form>
             <div class="name">
                 <label for="fname">First name:</label>
@@ -70,10 +104,23 @@
     </div>
 
     <footer class="section">
-        <h6>@2020 HOANG HA PHOTOGRAPHY</h6>
-        <h6>Back to top</h6>
+        <div class="logo-decoration">
+            <div class="line-separator"></div>
+            <div class="logo">
+                <span>Hoang Ha</span> Photography
+            </div>
+            <div class="line-separator"></div>
+        </div>
+        <br>
+        <p>@2020 HOANG HA PHOTOGRAPHY</p>
+        <a href="#">
+            <p>Back to top <i class="fa fa-angle-up"></i></p>
+        </a>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
     <script type="text/javascript " src="js/main.js "></script>
 </body>
 
